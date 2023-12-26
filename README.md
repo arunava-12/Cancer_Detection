@@ -14,7 +14,7 @@
   </p>
 </p>
 
-![Downloads](https://img.shields.io/github/downloads/arunava-12/https://github.com/arunava-12/Cancer_Detection.git/total) 
+[![Downloads](https://img.shields.io/badge/Download-Repository-blue.svg)](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/arunava-12/Cancer_Detection)
 
 ## Table Of Contents
 
