@@ -1,0 +1,29 @@
+<!-- templates/result.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Analysis Result</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    {% if uploaded_image %}
+                    <img src="{{ url_for('static', filename='uploads/' + uploaded_image) }}" 
+                         class="card-img-top" 
+                         style="max-height: 400px; object-fit: contain;">
+                    {% endif %}
+                    <div class="card-body text-center">
+                        <h2 class="card-title">{{ result }}</h2>
+                        <p class="h4">Confidence: {{ confidence }}%</p>
+                        <a href="/" class="btn btn-primary mt-3">Analyze Another Image</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
